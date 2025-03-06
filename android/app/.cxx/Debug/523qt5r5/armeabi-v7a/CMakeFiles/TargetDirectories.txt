@@ -1,0 +1,2 @@
+D:/project/kampus/belajar/flutter/tiket_wisata/android/app/.cxx/Debug/523qt5r5/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/project/kampus/belajar/flutter/tiket_wisata/android/app/.cxx/Debug/523qt5r5/armeabi-v7a/CMakeFiles/rebuild_cache.dir

@@ -12,12 +12,11 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
-  /// File path: assets/icons/idn-medium-edit.png
-  AssetGenImage get idnMediumEdit =>
-      const AssetGenImage('assets/icons/idn-medium-edit.png');
+  /// File path: assets/icons/idn.png
+  AssetGenImage get idn => const AssetGenImage('assets/icons/idn.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [idnMediumEdit];
+  List<AssetGenImage> get values => [idn];
 }
 
 class $AssetsImagesGen {
@@ -29,8 +28,6 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [podcastIdn];
-
-  get idnLogo => null;
 }
 
 class Assets {
