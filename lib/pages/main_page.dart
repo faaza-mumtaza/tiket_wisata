@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:tiket_wisata/widgets/nav_item.dart';
-import 'package:tiket_wisata/pages/home_page.dart';
+/* import 'package:tiket_wisata/pages/home_page.dart'; */
 import 'package:tiket_wisata/pages/search_page.dart';
 import 'package:tiket_wisata/pages/profile_page.dart';
+import 'package:tiket_wisata/pages/order_page.dart'; // Tambahkan import ini
+
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -21,12 +23,27 @@ class MainPage extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const HomePage()),
+                  MaterialPageRoute(builder: (context) => const OrderPage()), // Sesuaikan navigasi ke OrderPage
                 );
               },
             ),
             label: '',
           ),
+
+          /* BottomNavigationBarItem(
+            icon: NavItem(
+              icon: Icons.home,
+              label: 'Home',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const HomePage()),
+                );
+              },
+            ),
+            label: '',
+          ), */
+
           BottomNavigationBarItem(
             icon: NavItem(
               icon: Icons.search,
