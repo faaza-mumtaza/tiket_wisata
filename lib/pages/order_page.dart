@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tiket_wisata/data/dummy_data.dart';
+import 'package:tiket_wisata/pages/order_detail_page.dart';
 
 class OrderPage extends StatelessWidget {
   const OrderPage({super.key});
@@ -16,6 +17,14 @@ class OrderPage extends StatelessWidget {
             leading: Image.network(product.imageUrl),
             title: Text(product.name),
             subtitle: Text('\$${product.price}'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => OrderDetailPage(product: product),
+                ),
+              );
+            },
           );
         },
       ),
